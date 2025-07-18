@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     
+}
+
+.container{
+   display: grid;
+   grid-template-areas:
+   'header header header header'
+   'hero hero hero hero'
+   'project1 project2 project3 project4'
+   'footer footer footer footer';
+   grid-template-rows: .1fr .1fr 1fr .1fr;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   width: 100%;
+   height: 100%;
+   gap: 2px;
+
+}
+
+.header{
+    border: 1px solid black;
+    grid-area:header;
+    background-color: black;
+}
+
+.header h1{
+    border: 1px solid black;
+    text-align: center;
+    color: white;
+}
+
+
+.hero{
+   grid-area: hero;
+  
+}
+
+.hero img{
+    width: 100%;
+    height: 400px;
+}
+
+.card{
+   grid-row: 2 / 3;
+   grid-column: 2 / 4;
+   background-color: black;
+   border: 1px solid white;
+   
+}
+
+.card h1{
+   text-align: center;
+   color: white;
+}
+
+
+.project1{
+   border: 1px solid black;
+   grid-area: project1;
+   background-color: green;
+   color: white;
+   text-align: center;
+}
+
+.project2{
+   border: 1px solid black;
+   grid-area: project2;
+   background-color: black;
+   color: white;
+    text-align: center;
+}
+
+.project3{
+   border: 1px solid black;
+   grid-area: project3;
+   background-color: green;
+   color: white;
+    text-align: center;
+}
+
+.project4{
+   border: 1px solid black;
+   grid-area: project4;
+   background-color: black;
+   color: white;
+    text-align: center;
+}
+
+.footer{
+  border: 1px solid black;
+  background-color: black;
+  grid-area: footer;
+}
+
+
+
+
+
